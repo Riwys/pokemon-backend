@@ -36,7 +36,7 @@ function getRandomInt(min, max) {
 
 app.get('/pokemon', (req, res, next) => {
     function fetchPokemon(afterFetch) {
-    let randomNum = getRandomInt(1, 20)
+    let randomNum = getRandomInt(1, 100)
     fetch(`https://pokeapi.co/api/v2/pokemon/${randomNum}/?offset=1&limit=1`)
         .then(res => res.json())
         .then(result => afterFetch(result))
