@@ -19,6 +19,10 @@ const userSchema = new Schema({
         type: Number,
         default: 0
     },
+    pokemonStore: {
+        type: Array,
+        default: []
+    },
     joined: {
         type: Date,
         default: new Date()
