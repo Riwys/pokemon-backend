@@ -26,7 +26,7 @@ app.use('/signin', require('./routes/signin'));
 
 app.use('/register', require('./routes/register'));
 
-app.use('/image', require('./routes/image'));
+app.use('/entry', require('./routes/entry'));
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
